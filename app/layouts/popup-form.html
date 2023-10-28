@@ -1,0 +1,39 @@
+<div class="popup popup-form" id="popup-form">
+  <div class="popup__body">
+    <div class="popup__content">
+      <a href="#" class="popup__close close-popup"
+        ><img
+          src="./images/items/close.svg"
+          alt="Закрыть"
+      /></a>
+      <h4 class="popup-form__title">Заказать звонок</h4>
+      <p class="popup-form__text">Оставьте свой номер и наш консультант свяжется с вами в ближайшее время!</p>
+      <form action="#" id="form" class="form">
+        <div class="form__inputs">
+          @@include('../layouts/input.html', {
+          'placeholder': 'Ваше имя*',
+          'class': '_req',
+          'name': 'name',
+          'type': 'text',
+          'id': 'name'
+        })
+        @@include('../layouts/input.html', {
+          'placeholder': 'Телефон*',
+          'class': '_req _phone',
+          'name': 'phone',
+          'type': 'tel',
+          'id': 'tel'
+        })
+        </div>
+        @@include('../layouts/textarea.html')
+        @@include('../layouts/input-checkbox.html')
+
+        @@include('../layouts/button.html', {
+          'text': 'Отправить',
+          'type': 'submit',
+        })
+      </form>
+      
+    </div>
+  </div>
+</div>

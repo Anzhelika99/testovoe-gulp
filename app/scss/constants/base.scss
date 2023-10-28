@@ -1,0 +1,38 @@
+body {
+  position: relative;
+  z-index: 0;
+  font-family: "Rubik", sans-serif;
+  line-height: 2.125rem;
+  color: #333;
+  background-size: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.56rem;
+
+  @media (min-width: 50em) {
+    max-width: 50em;
+  }
+  @media (min-width: 73em) {
+    max-width: 73em;
+  }
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+.ml-1 {
+  margin-left: 1.7rem;
+  @media (min-width: 50em) {
+    margin-left: 4rem;
+  }
+  @media (min-width: 73em) {
+    margin-left: 7rem;
+  }
+}

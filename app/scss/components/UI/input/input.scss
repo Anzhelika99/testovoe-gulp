@@ -1,0 +1,38 @@
+.input__items {
+  position: relative;
+  width: 100%;
+
+  & .input {
+    width: 100%;
+    font-size: inherit;
+    color: #61636b;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1dce3;
+
+    @media (min-width: 50em) {
+      padding: 1rem;
+    }
+
+    &._error {
+      border: 1px solid #eb5757;
+      color: #eb5757;
+    }
+  }
+
+  & .label {
+    opacity: 0;
+    transition: all 0.2s;
+    position: absolute;
+    right: 0;
+    bottom: -1rem;
+    color: #F00;
+    line-height: 120%;
+    font-size: 0.875rem;
+
+    &._error-label {
+      opacity: 1;
+    }
+  }
+
+}

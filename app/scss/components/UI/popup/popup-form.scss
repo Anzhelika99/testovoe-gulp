@@ -1,0 +1,56 @@
+.popup-form {
+  & .popup__content {
+    width: 100%;
+    max-width: 43.75rem;
+    padding: 4rem 1rem;
+    font-family: "NotoSans", sans-serif;
+    font-weight: 400;
+    line-height: 140%;
+
+    @media (min-width: 50em) {
+      font-size: 1.125rem;
+      padding: 4rem 3rem 4.5rem 3rem;
+    }
+  }
+
+  &__title {
+    color: #000;
+    font-weight: 700;
+
+    @media (min-width: 50em) {
+      font-size: 2rem;
+    }
+  }
+
+  &__text {
+    margin: 1rem 0 1.49rem 0;
+  }
+
+  & .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+
+    @media (min-width: 50em) {
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    &__inputs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      @media (min-width: 50em) {
+        flex-direction: row;
+        gap: 2rem;
+      }
+      & ._error-label {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}

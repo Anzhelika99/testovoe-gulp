@@ -1,0 +1,65 @@
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 50em) {
+      min-width: 50%;
+    }
+
+  &__imgs {
+    //padding: 0 1rem 0 0;
+    display: flex;
+    
+    gap: 0.44rem;
+
+    @media (min-width: 50em) {
+      gap: 0;
+    }
+  }
+
+
+  &__text {
+    position: relative;
+    padding: 0 0 0 1.2rem;
+
+    @media (min-width: 50em) {
+      text-align-last: left;
+      width: 16rem;
+    }
+
+    & img {
+      position: absolute;
+      z-index: -1;
+      left: 0;
+    }
+
+    & a {
+      display: inline-block;
+      color: inherit;
+      
+
+      font-size: 0.9375rem;
+      line-height: 115.188%; 
+      font-weight: 700;
+
+      padding: 0 0 0.38rem 0;
+      border-bottom: 1px solid #333333;
+      
+    }
+  }
+
+  &__img-dots {
+    display: none;
+
+    background-image: url(../images/bg-items/dots.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 2px;
+
+    @media (min-width: 50em) {
+      display: block;
+    }
+  }
+}

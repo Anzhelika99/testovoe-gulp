@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <main>
+      <div class="stages">
+        <div class="stages__wrapper container">
+          <div class="stage">
+            <img src="./images/bg-items/circle.svg" alt="circle" class="stage__bg-img stage__bg-img_circle">
+            @@include('./layouts/stage-content.html', {
+              'title': '<span>1969</span> год',
+              'mb': 'true',
+              'text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula erat sed lobortis sodales. Donec dictum id lacus id maximus.',
+            })
+          </div>
+          <div class="stage">
+            <img src="./images/bg-items/triangle.svg" alt="triangle" class="stage__bg-img_triangle stage__bg-img ">
+            @@include('./layouts/stage-content.html', {
+              'title': '<span>1997</span> год',
+              'text': 'Nulla in erat sit amet augue porta vulputate ac vel orci. <br>Suspendisse quis velit eleifend.',
+            })
+          </div>
+          <div class="stage">
+            @@include('./layouts/stage-content.html', {
+              'title': '<span>2008</span> год',
+              'text': 'In luctus ipsum id enim molestie ornare. Donec eros augue, suscipit vel erat ac, convallis laoreet lectus.',
+            })
+            @@include('./layouts/button.html', {
+              'text': 'Заказать звонок',
+              'type': 'button',
+              'link': 'popup-form',
+              'mt': 'true',
+              'ml': 'true',
+            })
+            <img src="./images/bg-items/polygon.svg" alt="polygon" class="stage__bg-img stage__bg-img_polygon">
+          </div>
+          <img src="./images/bg-items/steps.svg" alt="steps" class="stage__bg-img stage__bg-img_steps">
+        </div>
+
+      </div>
+      <div class="about-us">
+        <div class="about-us__wrapper">
+          <div class="about-us__item">
+            <div class="about-us__item-img">
+              <!--<img src="./images/about/item.webp" alt="about">-->
+            </div>
+            <div class="about-us__item-text">
+              <p>Curabitur sed dapibus ipsum. Curabitur vitae mollis ipsum. Sed molestie, nisl quis consectetur elementum, leo orci condimentum lacus, id dignissim erat justo nec ligula. Nam varius massa mauris, sit amet tempor dolor molestie eu. Nulla a faucibus libero. Nam tristique metus tempor fermentum ultricies. Donec molestie vel nunc et posuere.</p>
+            </div>
+          </div>
+          <div class="about-us__cart">
+            @@include('./layouts/stage-content.html', {
+              'title': '<span>700</span>',
+              'mb': 'true',
+              'text': ' Sed molestie, nisl quis consectetur elementum, leo orci condimentum lacus, ',
+            })
+          </div>
+          <div class="about-us__img-logo">
+            <img src="./images/logo.svg" alt="logo">
+          </div>
+          @@include('./layouts/link.html', {
+              'text': 'Lorem ipsum',
+              'link': '#',
+            })
+        </div>
+
+      </div>
+      <div class=" services">
+        <div class="services__wrapper container">
+          @@include('./layouts/services-item.html', {
+            'text': 'In ultrices sem',
+            'img-id': 'icon-logo',
+            'link': '#',
+          })
+          @@include('./layouts/services-item.html', {
+            'text': 'Phasellus vel nibh finibus.',
+            'img-id': 'icon-logo',
+            'link': '#',
+          })
+          @@include('./layouts/services-item.html', {
+            'text': 'Nascetur ridiculus mus.',
+            'img-id': 'icon-logo',
+            'link': '#',
+          })
+          @@include('./layouts/services-item.html', {
+            'text': 'Vivamus euismod nunc, at pulvinar .',
+            'img-id': 'icon-logo',
+            'link': '#',
+          })
+          @@include('./layouts/services-item.html', {
+            'text': 'Etiam id vestibulum ex.',
+            'img-id': 'icon-logo',
+            'link': '#',
+          })
+          @@include('./layouts/services-item.html', {
+            'text': 'IOrci varius natoque penatibus',
+            'img-id': 'icon-arrow',
+            'link': '#',
+            'yellow': 'true',
+            'grey': 'true',
+          })
+
+        </div>
+      </div>
+    </main>
+    <div class="popups">
+      @@include('./layouts/popup-form.html')
+    </div>
+  </div>
+    <script src="./js/main.min.js"></script>
+</body>
+</html>
